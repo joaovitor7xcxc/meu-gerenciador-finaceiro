@@ -1,63 +1,106 @@
-# 📌 My Personal Manager --- Kanban
+📊 Funcionamento do Organizador Financeiro:
+1. Estrutura Principal:
+Receitas (entrada de dinheiro)
 
-## 📋 Sobre o Projeto
+Despesas (saída de dinheiro)
 
-My Personal Manager é uma aplicação web estilo Kanban desenvolvida para
-organização de tarefas.\
-O sistema permite criar, mover e excluir tarefas com uma interface
-simples e responsiva.
+Saldo (diferença entre receitas e despesas)
 
-## 🚀 Funcionalidades
+Histórico de Transações
 
--   Criar novas tarefas\
--   Editar tarefas\
--   Excluir tarefas\
--   Mover tarefas entre colunas (drag & drop)\
--   Salvamento automático no localStorage\
--   Layout responsivo\
--   Menu mobile
+2. Fluxo de Uso:
+a) Cadastro de Transações:
 
-## 🧱 Estrutura do Projeto
+text
+1. Usuário preenche:
+   - Título (ex: "Salário", "Mercado")
+   - Valor (ex: "1500", "350")
+   
+2. Clica em "Adicionar"
+b) Cálculo Automático:
 
-    /my-personal-manager
-    │── index.html
-    │── styles.css
-    │── script.js
-    │── README.md
+Sistema soma todas as Receitas
 
-## ▶️ Como Executar
+Sistema soma todas as Despesas
 
-### 1. Clonar o repositório
+Calcula automaticamente: Saldo = Receitas - Despesas
 
-    git clone https://github.com/SEU-USUARIO/my-personal-manager.git
+3. Componentes Visuais:
+text
+RECEITAS: R$ 0,00
+    ↑
+    | Transações de entrada
+    |
+NOVA TRANSAÇÃO
+    |
+    | Transações de saída
+    ↓
+DESPESAS: R$ 0,00
+    |
+    ↓
+SALDO: R$ 0,00
+4. Exemplo Prático:
+Se o usuário cadastrar:
 
-### 2. Abrir o projeto
+Receita: Salário R$ 3.000
 
-Apenas abra:
+Despesa: Aluguel R$ 1.200
 
-    index.html
+Despesa: Mercado R$ 500
 
-## 💾 Armazenamento
+O sistema mostra:
 
-Usa **localStorage**, mantendo dados mesmo após fechar o navegador.
+Receitas: R$ 3.000,00
 
-## 🔧 Tecnologias Utilizadas
+Despesas: R$ 1.700,00
 
--   HTML5\
--   CSS3\
--   JavaScript\
--   LocalStorage
+Saldo: R$ 1.300,00
 
-## 📦 Melhorias Futuras
+5. Funcionalidades Prováveis (mesmo que não visíveis):
+📱 Responsivo - Funciona em celular e computador
 
--   Tema escuro\
--   Categorias\
--   Exportar/importar tarefas
+💾 Armazenamento - Salva transações (localStorage ou backend)
 
-## 👨‍💻 Autor
+📊 Categorização - Organiza por tipo (alimentação, transporte, etc.)
 
-Desenvolvido por **João Vitor**.
+📅 Filtros - Busca por data, valor ou título
 
-## 📄 Licença
+📈 Gráficos - Visualização de gastos (pode ser em outra aba)
 
-Licença MIT --- uso livre.
+6. Tecnologias Prováveis:
+html
+Frontend: HTML, CSS, JavaScript
+Possivelmente: React, Vue.js ou framework similar
+Armazenamento: localStorage ou API backend
+7. Benefícios para o Usuário:
+✅ Controle financeiro em tempo real
+✅ Visão clara do saldo disponível
+✅ Histórico completo de movimentações
+✅ Simplicidade - fácil de usar
+✅ Acesso rápido - sem planilhas complexas
+
+8. Melhorias Possíveis:
+Ícones para categorias
+
+Gráficos de distribuição de gastos
+
+Metas de economia
+
+Relatórios mensais/anuais
+
+Exportação para Excel/PDF
+
+Login com múltiplos usuários
+
+🎯 Resumo Simples:
+É como uma planilha inteligente onde você:
+
+Anota ganhos e gastos
+
+Vê automaticamente quanto tem disponível
+
+Acompanha para onde seu dinheiro está indo
+
+Toma decisões financeiras mais conscientes
+
+Objetivo principal: Ajudar pessoas a controlar melhor seu dinheiro sem complicação!
